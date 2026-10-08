@@ -1,16 +1,16 @@
-# React + Vite
+﻿# My Todo
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Vite와 React로 만든 할 일 앱입니다. 할 일을 추가, 수정, 삭제하고 완료 상태를 바꿀 수 있습니다. 전체, 진행 중, 완료 목록을 볼 수 있습니다.
 
-Currently, two official plugins are available:
+## 실행
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. `todo-backend` 폴더에서 백엔드를 실행합니다: `npm start`
+2. 이 폴더에서 의존성을 설치합니다: `npm install`
+3. 개발 서버를 실행합니다: `npm run dev`
 
-## React Compiler
+기본 API 주소는 `http://localhost:5000`입니다. 다른 주소를 사용하려면 이 폴더에 `.env.local` 파일을 만들고 `VITE_API_BASE_URL=http://localhost:5000` 형식으로 지정하세요.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 확인
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- `npm run lint`
+- `npm run build`
