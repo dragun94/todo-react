@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000'
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000').replace(/\/+$/, '')
 const TODAY = new Intl.DateTimeFormat('ko-KR', {
   year: 'numeric', month: 'long', day: 'numeric', weekday: 'long',
 }).format(new Date())
